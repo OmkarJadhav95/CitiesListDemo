@@ -24,6 +24,7 @@ class CityViewModel: ObservableObject {
     // Fetch cities list
     func fetchCitiesData() 
     {
+        print("new change added")
         Task {
             do {
                 let responseData = try await NetworkService.shared.fetchCities()
